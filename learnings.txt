@@ -2,4 +2,21 @@ Learning Onjectives
     1. Learn anout abstract syntax trees (ASTs) and how program can represent and
        manipulate other programs. Good for working with linters, static analyzers,
        and meta-programming
-    2. Learn(revise) assembly, calling conventions, and low level details of computerd
+    2. Learn(revise) assembly, calling conventions, and low level details of computer
+
+Integers
+   gcc return_2.c : compile source file
+   gcc -o return_2 return_2.c
+   ./return_2
+
+   convert to assembly(AT&T syntax)
+   gcc -S -O3 -fno-asynchronous-unwind-tables return_2.c
+   cat return_2.s
+
+   .global _main indicates that the _main symbol should be visible to the linker, otherwise
+   it can't find the entry point to th program
+
+   using a python script (regular expression) to extract the return value
+   from the source code => (python3 main.py return_2.c)
+
+   parsing the whole program with one big reg expression isn't a viable long term strategy
