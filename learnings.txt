@@ -1,0 +1,5 @@
+Learning Onjectives
+    1. Learn anout abstract syntax trees (ASTs) and how program can represent and
+       manipulate other programs. Good for working with linters, static analyzers,
+       and meta-programming
+    2. Learn(revise) assembly, calling conventions, and low level details of computerd
